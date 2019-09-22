@@ -1,6 +1,7 @@
-import { prop, Typegoose } from "typegoose";
+import { prop, Typegoose } from "@hasezoey/typegoose";
 
 export class QuakeEntity extends Typegoose {
+
     @prop()
     public readonly eventName: string;
     @prop()
@@ -46,4 +47,5 @@ export class QuakeEntity extends Typegoose {
         }
 }
 
-export const QuakeModel = new Typegoose().getModelForClass(QuakeEntity);
+export const QuakeModel = Object.create(QuakeEntity.prototype)
+                                .getModelForClass(QuakeEntity);

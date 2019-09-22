@@ -2,7 +2,8 @@
   "name": "core",
   "version": "1.0.0",
   "description": "Core data models for the application",
-  "main": "target/app.js",
+  "main": "./target/index.js",
+  "types": "./target/index.d.ts",
   "scripts": {
     "test": "echo \"Ciao\"",
     "lint": "tslint ./src/**/*.ts"
@@ -14,8 +15,8 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
+    "@hasezoey/typegoose": "^5.9.2",
     "@types/mongoose": "^5.5.17",
-    "mongoose": "^5.7.1",
-    "typegoose": "^5.9.1"
+    "mongoose": "^5.7.1"
   }
 }
