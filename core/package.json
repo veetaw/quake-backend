@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Core data models for the application",
+  "main": "target/app.js",
+  "scripts": {
+    "test": "echo \"Ciao\""
+  },
+  "author": "Alessio Ferarini, Vito Piegari",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}

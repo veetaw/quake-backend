@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Api for the quake-backend",
+  "main": "target/app.js",
+  "scripts": {
+    "test": "echo \"ciao\""
+  },
+  "author": "Alessio Ferrarini, Vito Piegari",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}

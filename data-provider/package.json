@@ -1,0 +1,14 @@
+{
+  "name": "data-provider",
+  "version": "1.0.0",
+  "description": "Data provider for the quake backend",
+  "main": "target/app.js",
+  "scripts": {
+    "test": "echo \"Hello world\""
+  },
+  "author": "Alessio Ferrarini, Vito Piegari",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
