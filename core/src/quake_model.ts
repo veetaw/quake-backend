@@ -3,6 +3,8 @@ import { prop, Typegoose } from "@hasezoey/typegoose";
 export class QuakeEntity extends Typegoose {
 
     @prop()
+    public readonly eventId: string;
+    @prop()
     public readonly eventName: string;
     @prop()
     public readonly author: string;
@@ -23,7 +25,8 @@ export class QuakeEntity extends Typegoose {
     @prop()
     public readonly time: Date;
 
-    constructor(eventName: string,
+    constructor(eventId: string,
+                eventName: string,
                 author: string,
                 creationTime: Date,
                 coordinates: Coordinates,
@@ -34,6 +37,7 @@ export class QuakeEntity extends Typegoose {
                 stationCount: number,
                 time: Date) {
                 super();
+                this.eventId = eventId;
                 this.eventName = eventName;
                 this.author = author;
                 this.creationTime = creationTime;
